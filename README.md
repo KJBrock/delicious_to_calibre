@@ -18,7 +18,17 @@ Well, this should be relatively straightforward.  It's exploratory at this point
 
 I'm going to use this a bit like a journal at first.
 
+First steps are looking at the files exported by Library, and importing them into Python.
+
 ## Anything Else?
 
 I'd like at some point to handle sharing the Calibre information on the web.  THere's a built-in Calibre content server, but I'd like something more robust.  We'll see.
 
+## References 
+
+- Calibre 
+    - API docs
+    - Other work
+
+- Library
+    - Library EOL
