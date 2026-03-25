@@ -35,15 +35,15 @@ I'd like at some point to handle sharing the Calibre information on the web.  Th
 
 ### Calibre 
 
-1. (calibredb documentation)[https://manual.calibre-ebook.com/generated/en/calibredb.html]
+1. [calibredb documentation](https://manual.calibre-ebook.com/generated/en/calibredb.html)
 
 ### DeliciousLibrary
 
-2. (DeliciousLibrary on Wikipedia)[https://en.wikipedia.org/wiki/Delicious_Library]
-3. (Message from Wil Shipley)[https://mastodon.social/@wjs/113539330521476328] about what went wrong.
-4. (Redit thread)[https://www.reddit.com/r/macapps/comments/1gjwlci/is_delicious_library_finally_dead/] on the passing of Delicious Library. 
+2. [DeliciousLibrary on Wikipedia](https://en.wikipedia.org/wiki/Delicious_Library)
+3. [Message from Wil Shipley](https://mastodon.social/@wjs/113539330521476328) about what went wrong.
+4. [Redit thread](https://www.reddit.com/r/macapps/comments/1gjwlci/is_delicious_library_finally_dead/) on the passing of Delicious Library. 
 
 ### Other work
 
-5. Simualtine has some notes on (using Python to access Calibre)[https://simulatine.github.io/100DaysOfCode/day-6-python-and-calibre.html]
-6. Davide Aversa has a post on (using Calibre for tracking physical books)[https://www.davideaversa.it/blog/how-calibre-manage-physical-library/]
+5. Simualtine has some notes on [using Python to access Calibre](https://simulatine.github.io/100DaysOfCode/day-6-python-and-calibre.html)
+6. Davide Aversa has a post on [using Calibre for tracking physical books](https://www.davideaversa.it/blog/how-calibre-manage-physical-library/)
