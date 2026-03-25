@@ -8,7 +8,7 @@ The intent of this project is to convert a database (or export) of Delicious Lib
 
 Delicious Library was a wonderful app on macOS which tracked your physical books, and included support for both entering book data _via_ an iOS scanning app and looking up book information automatically on Amazon.
 
-Sadly it is no more$^{3}$$^{4}$.  A change in Amazon's fee structure for querying book data made it impractical for the authors to continue without a aubscription-based app, and so they let the project drop.
+Sadly it is no more<sup>3</sup>$^{4}$.  A change in Amazon's fee structure for querying book data made it impractical for the authors to continue without a aubscription-based app, and so they let the project drop.
 
 Now I have many thousands of book entries in a no longer supported app.  So...
 
