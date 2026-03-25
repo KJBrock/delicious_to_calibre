@@ -2,13 +2,13 @@
 
 ## What?
 
-The intent of this project is to convert a database (or export) of Delicious Library$^{2}$ books to a format acceptable by Calibre, and to add them to a Calibre library.  There are several ways to do this, and I'll be starting with (what I think of) as one of the simplest.
+The intent of this project is to convert a database (or export) of Delicious Library<sup>**2**</sup> books to a format acceptable by Calibre, and to add them to a Calibre library.  There are several ways to do this, and I'll be starting with (what I think of) as one of the simplest.
 
 ## Why?
 
 Delicious Library was a wonderful app on macOS which tracked your physical books, and included support for both entering book data _via_ an iOS scanning app and looking up book information automatically on Amazon.
 
-Sadly it is no more<sup>3</sup>$^{4}$.  A change in Amazon's fee structure for querying book data made it impractical for the authors to continue without a aubscription-based app, and so they let the project drop.
+Sadly it is no more<sup>**3**</sup><sup>**4**</sup>.  A change in Amazon's fee structure for querying book data made it impractical for the authors to continue without a aubscription-based app, and so they let the project drop.
 
 Now I have many thousands of book entries in a no longer supported app.  So...
 
@@ -20,16 +20,16 @@ I'm going to use this a bit like a journal at first.
 
 1. Look at the files exported by Library, and importing them into Python.  This is easy to do using CSV export from Library and import into Python.  We end up with a very large array of dictionaries.
 
-2. Test the **calibredb** command line app$^{1}$ for various situations with a new, empty, Calibre library
+2. Test the **calibredb** command line app<sup>**1**</sup> for various situations with a new, empty, Calibre library
 
 3. Map the information organization in Library to the information organization in Calibre for information common to both.  For example, Calibre says "authors", Library says "creator".
 
-4. Create meta-data for new media types.  First check to see if it's re-inventing the wheel.  There is some information available on parts of the problem$^{5}$$^{6}$. Library supports physical books in multiple types of covers, DVDs, CDs and VHS.
+4. Create meta-data for new media types.  First check to see if it's re-inventing the wheel.  There is some information available on parts of the problem<sup>**5**</sup><sup>**6**</sup>. Library supports physical books in multiple types of covers, DVDs, CDs and VHS.
 
 
 ## Anything Else?
 
-I'd like at some point to handle sharing the Calibre information on the web.  THere's a built-in Calibre content server, but I'd like something more robust.  We'll see.
+I'd like at some point to handle sharing the Calibre information on the web.  There's a built-in Calibre content server, but I'd like something more robust.  We'll see.
 
 ## References 
 
