@@ -26,7 +26,6 @@ I'm going to use this a bit like a journal at first.
 
 4. Create meta-data for new media types.  First check to see if it's re-inventing the wheel.  There is some information available on parts of the problem<sup>**5**</sup><sup>**6**</sup>. Library supports physical books in multiple types of covers, DVDs, CDs and VHS.
 
-
 ## Anything Else?
 
 I'd like at some point to handle sharing the Calibre information on the web.  There's a built-in Calibre content server, but I'd like something more robust.  We'll see.
