@@ -15,7 +15,7 @@ def main():
 
     books = import_from_delicious_csv(args.library_file)
     
-    test_books = books[2010:2040]
+    #test_books = books[2010:2040]
     
     print("Adding books to calibre...")
     add_books_to_calibre(test_books, args.calibre_library_location)
