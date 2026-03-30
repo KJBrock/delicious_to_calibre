@@ -20,7 +20,7 @@ def main():
         exit(1)
         
     # Restrict book list for testing.  Full catalog is > 11000
-    # books = books[2010:2040]
+    # books = books[:20]
     
     print("Adding books to calibre...")
     add_books_to_calibre(books, args.calibre_library_location)

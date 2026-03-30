@@ -5,7 +5,11 @@ import os
 # file in our case that we'll just write it by hand.
 #
 def write_pbook_data(book, filename):
-    with open(filename, "w") as tomlfile:
+    
+    # Being a bit cautious about names.  ":" might be OK, but not always.
+    escaped_filename = filename.replace("/", "_").replace(":","--")
+    
+    with open(escaped_filename, "w") as tomlfile:
         tomlfile.write("[metadata]\n\n")
         if "creator" in book:            
             tomlfile.write(f"author={book["creator"]}\n")
@@ -30,6 +34,7 @@ def write_pbook_data(book, filename):
 
         tomlfile.write("\n[original data]\n\n")
         tomlfile.write(f"{book}\n")
+        return escaped_filename
 
 def clean_up_pbook(filename):
     try:

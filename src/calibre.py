@@ -164,7 +164,9 @@ def add_book_format(book, calibre_library):
     command = ["calibredb", "--with-library", f"{calibre_library}", "add_format", f"{book["calibre_id"]}"]
     
     pbook_file_name = f"{book["title"]}.pbook"
-    write_pbook_data(book, pbook_file_name)
+    
+    # Filename may have been changed by this fn.
+    pbook_file_name = write_pbook_data(book, pbook_file_name)
 
     command.append(pbook_file_name)
     format_result = subprocess.run(command, capture_output=True, text=True)
