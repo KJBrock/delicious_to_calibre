@@ -14,17 +14,22 @@ Now I have many thousands of book entries in a no longer supported app.  So...
 
 ## How?
 
-Well, this _should_ be relatively straightforward, but... it's exploratory at this point, so I need to start by finding out more about the file formats on both sides.  
+Well, this _should_ be relatively straightforward, 
 
-I'm going to use this a bit like a journal at first.
+1. Look at the files exported by Library, and import them into Python.  This is easy to do using CSV export from Library and import into Python.  We end up with a very large array of dictionaries.
 
-1. Look at the files exported by Library, and importing them into Python.  This is easy to do using CSV export from Library and import into Python.  We end up with a very large array of dictionaries.
-
-2. Test the **calibredb** command line app<sup>**1**</sup> for various situations with a new, empty, Calibre library
+2. Use the `calibredb` command line app with Python's `subproces` module to manipulate the library.
 
 3. Map the information organization in Library to the information organization in Calibre for information common to both.  For example, Calibre says "authors", Library says "creator".
 
-4. Create meta-data for new media types.  First check to see if it's re-inventing the wheel.  There is some information available on parts of the problem<sup>**5**</sup><sup>**6**</sup>. Library supports physical books in multiple types of covers, DVDs, CDs and VHS.
+4. Create meta-data for new media types.  There is some information available on parts of the problem<sup>**5**</sup><sup>**6**</sup>. Library supports physical books in multiple types of covers, DVDs, CDs and VHS.
+
+## Current Status
+
+Right now it handles basic import, re-creating Shelves, Media Type.  The following two items are ones I plan to get around to soon.
+
+- I haven't had any luck getting calibre to automatically grab the cover form a URL.  Need to write that code and add cover images.
+- Not handling Format (Hardback, Paperback, Trade Paper, Mass Market Paperback) and all of the variations to same.
 
 ## Anything Else?
 

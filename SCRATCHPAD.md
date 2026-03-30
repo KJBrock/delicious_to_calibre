@@ -35,7 +35,21 @@ Where the pbook file is physical-book-specific information.
 
 ## More to look at
 
-- `add_custom_column`
+- add_custom_column
+
+```
+calibredb add_custom_column [options] label name datatype
+```
+
 - `set_custom`
-- `set_metadata` Need to verify how this interacts with the `[metadata]` section in the .pbook file.  Is that read when the book format is added?  I cna check that with `show_metadata` after the initial add process is finished.
-- `backup_metadata` This normally happens automatically, but can be forces with `--all`
+
+```
+calibredb set_custom [options] column id value
+```
+
+- `set_metadata` Need to verify how this interacts with the `[metadata]` section in the .pbook file.  Is that read when the book format is added?  I cna check that with 
+
+```
+calibredb set_metadata --field X:Y book_id 
+```
+
