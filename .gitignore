@@ -7,4 +7,4 @@ share/
 \#*
 test_library/
 partial_main/
-*__pycache__*
+src/__pycache__
