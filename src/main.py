@@ -18,10 +18,10 @@ def main():
     #test_books = books[2010:2040]
     
     print("Adding books to calibre...")
-    add_books_to_calibre(test_books, args.calibre_library_location)
+    add_books_to_calibre(books, args.calibre_library_location)
     
     print("Setting extra book data...")
-    for book in test_books:
+    for book in books:
         if "calibre_id" in book:
             print(f"Adding extra data for {book["title"]} -- {book["creator"]}")
             add_book_format(book, args.calibre_library_location)
