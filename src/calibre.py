@@ -113,6 +113,10 @@ def create_custom_columns(columns, calibre_library):
 def add_books_to_calibre(books, calibre_library):
     print(f"Adding {len(books)} books to calibre")
     for book in books:        
+        if book["title"] == "" and book["creator"] == "":
+            print(f"skipping empty book: {book}")
+            continue
+        
         command = ["calibredb", "--with-library", f"{calibre_library}", "add", "--duplicates"]
 
         if len(book["creator"]) > 0:

@@ -1,7 +1,6 @@
 import csv
 
 def import_from_delicious_csv(library_file):        
-    
     catalog_entries = []
     with open(library_file, newline='') as catalog:
         catalog_reader = csv.reader(catalog, delimiter=',', quotechar='"')
@@ -10,13 +9,17 @@ def import_from_delicious_csv(library_file):
 
     # first line of the csv file is column headers.
     field_names = catalog_entries[0]
-    
+    try:
+        title_index = field_names.index("title")
+    except:
+        raise ValueError("Missing title header in CSV file.")
+        
     # The rest are book/DVD/VHS/CD entries.
     book_entries = catalog_entries[1:]
         
     # This will give us an array of ~11000 books with the catalog above.
     #
-    books = [dict(zip(field_names, book_entry)) for book_entry in book_entries]   
+    books = [dict(zip(field_names, book_entry)) for book_entry in book_entries if len(book_entry[title_index]) > 0]
 
     return books
 

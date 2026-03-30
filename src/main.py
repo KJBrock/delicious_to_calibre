@@ -13,9 +13,14 @@ def main():
     create_custom_columns(custom_columns, 
                           args.calibre_library_location)
 
-    books = import_from_delicious_csv(args.library_file)
-    
-    #test_books = books[2010:2040]
+    try:
+        books = import_from_delicious_csv(args.library_file)
+    except ValueError as ve:
+        print(f"ERROR: importing CSV file. {ve}")
+        exit(1)
+        
+    # Restrict book list for testing.  Full catalog is > 11000
+    # books = books[2010:2040]
     
     print("Adding books to calibre...")
     add_books_to_calibre(books, args.calibre_library_location)
@@ -27,6 +32,7 @@ def main():
             add_book_format(book, args.calibre_library_location)
         else:
             print(f"Item not added to calibre: {book["title"]}")
+            continue
 
         for k in book:
             if len(k) == 0:
